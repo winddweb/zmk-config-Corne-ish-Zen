@@ -2,12 +2,12 @@
 *
 * Copyright (c) 2021 Darryl deHaan
 * SPDX-License-Identifier: MIT
-*
+* Modified by: Yifeng
+* Modified on: 2021/10/15
 */
 
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
+#include <behaviors.dtsi> #include <dt-bindings/zmk/keys.h> #include
+ <dt-bindings/zmk/bt.h>
 
 / {
         keymap {
