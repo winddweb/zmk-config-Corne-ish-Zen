@@ -7,12 +7,13 @@
 * Version: v0.8
 */
 
-#include <behaviors.dtsi> #include <dt-bindings/zmk/keys.h> #include
- <dt-bindings/zmk/bt.h>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 
  #define DEF 0
- #define LO 1
- #define RA 2
+ #define LOW 1
+ #define RAI 2
  #define NAV 3
  #define ADJ 4
 
@@ -31,7 +32,7 @@
    &kp ESC       &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &lt NAV CAPS  &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp RET
    &kp LSHFT     &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT SQT
-                  &kp LA &kp LCMD &lt LO SPACE   &lt RA SPACE &mt RCMD TAB &kp LCTRL
+                  &kp LA &kp LCMD &lt LOW SPACE   &lt RAI SPACE &mt RCMD TAB &kp LCTRL
                         >;
                 };
                 lower_layer {
