@@ -11,11 +11,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
- #define DEF 0
- #define LOW 1
- #define RAI 2
- #define NAV 3
- #define ADJ 4
+#define DEF 0
+#define LOW 1
+#define RAI 2
+#define NAV 3
+#define ADJ 4
 
 / {
         keymap {
@@ -73,5 +73,14 @@
                            &trans  &trans  &trans       &trans  &trans  &trans
                         >;
                 };
+                adj_layer {
+                     label = "NAV";
+                     bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans       &trans  &trans  &trans
+                     >;
+             };
         };
 };
