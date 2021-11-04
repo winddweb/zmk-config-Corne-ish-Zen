@@ -4,7 +4,7 @@
 * SPDX-License-Identifier: MIT
 * Modified by: Yifeng
 * Modified on: 2021-11-03
-* Version: v0.9 start over
+* Version: v0.95 start over
 */
 
 #include <behaviors.dtsi>
@@ -23,27 +23,27 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        label = "DEF";
+                        label = "";
                         bindings = <
-&kp ESC       &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-&lt NAV CAPS  &kp A &kp S &kp D &kp F &kp G    &kp H &kp J  &kp K     &kp L   &kp SEMI &kp RET
-&kp LSHFT     &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHFT SQT
-               &kp LALT &kp LCMD &lt LOW SPACE   &lt RAI SPACE &mt RCMD TAB &kp LCTRL
+&kp ESC       &kp Q    &kp W    &kp E    &kp R    &kp T       &kp Y    &kp U     &kp I        &kp O      &kp P       &kp BSPC
+&lt NAV CAPS  &kp A    &kp S    &kp D    &kp F    &kp G       &kp H    &kp J     &kp K        &kp L      &kp SEMI    &kp RET
+&kp LSHFT     &kp Z    &kp X    &kp C    &kp V    &kp B       &kp N    &kp M     &kp COMMA    &kp DOT    &kp FSLH &mt RSHFT SQT
+                     &kp LALT    &kp LCMD &lt LOW SPACE       &lt RAI SPACE &mt RCMD TAB    &kp LCTRL
                         >;
                 };
 
                 low_layer {
-                        label = "LOW";
+                        label = "";
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U &kp I    &kp O   &kp P    &kp BKSP
-   &kp LALT  &kp A &kp S &kp D &kp F &kp G    &kp H &kp J &kp K    &kp L   &kp QUOT &kp ENTER
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M &kp CMMA &kp DOT &kp FSLH &kp RSFT
-               &kp LCTL &mo NAV &kp SPC    &kp SPC &mo ADJ &kp F13
+&kp TAB       &kp N1          &kp N2          &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+&kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+                                &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
 
                 rai_layer {
-                        label = "RAI";
+                        label = "";
                         bindings = <
    &kp TAB     &none &none &none &none &none    &kp KP_EQUAL    &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_MINUS &kp BSPC
    &kp KP_NLCK &none &none &none &none &none    &kp KP_ASTERISK &kp KP_N4 &kp KP_N5 &kp KP_N6 &kp KP_PLUS  &none
@@ -53,7 +53,7 @@
                 };
 
                 nav_layer {
-                        label = "NAV";
+                        label = "";
                         bindings = <
    &kp ESC   &kp N1 &kp N2 &kp N3    &kp N4    &kp N5       &kp N6   &kp N7   &kp N8 &kp N9    &kp N0   &kp DEL
    &kp GRAVE &none  &none  &kp PSCRN &kp MINUS &kp EQUAL    &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp SEMI &none
@@ -63,7 +63,7 @@
                 };
 
                 adj_layer {
-                        label = "ADJ";
+                        label = "";
                         bindings = <
    &kp F1      &kp F2  &kp F3   &kp F4    &kp F5 &kp F6    &kp F7   &kp F8   &kp F9 &kp F10   &kp F11 &kp F12
    &kp CAPS    &kp INS &kp HOME &kp PG_UP &none  &none     &kp LEFT &kp DOWN &kp UP &kp RIGHT &none   &none
@@ -73,7 +73,7 @@
                 };
 
                 cfg_layer {
-                        label = "CFG";
+                        label = "";
                         bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
