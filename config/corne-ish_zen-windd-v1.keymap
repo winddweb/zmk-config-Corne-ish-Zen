@@ -3,8 +3,8 @@
 * Copyright (c) 2021 lowprokb.ca
 * SPDX-License-Identifier: MIT
 * Modified by: Yifeng
-* Modified on: 2021-11-03
-* Version: v0.95 start over
+* Modified on: 2021-11-04
+* Version: v0.99 rc
 */
 
 #include <behaviors.dtsi>
@@ -23,7 +23,7 @@
                 combo_esc {
                     timeout-ms = <50>;
                     key-positions = <0 1>;
-                    layers = <0>
+                    layers = <0>;
                     bindings = <&kp esc>;
                     // bindings = <&mo ADJ>;
                 };
