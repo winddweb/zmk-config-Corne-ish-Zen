@@ -22,10 +22,9 @@
                 compatible = "zmk,combos";
                 combo_esc {
                     timeout-ms = <50>;
-                    key-positions = <0 1>;
-                    layers = <0>;
-                    bindings = <&kp esc>;
-                    // bindings = <&mo ADJ>;
+                    key-positions = <17 29>; // F B
+                    layers = <0>; //default layer only
+                    bindings = <&mo ADJ>;
                 };
         };
 
